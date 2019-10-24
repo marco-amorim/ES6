@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+        <!-- Your custom script here -->
+        <script type="text/babel">
+            
+            //3 escopos: global, função e bloco
+
+           let serie = 'Friends'
+
+           {
+               //var dentro do bloco sobrescreve a variavel global
+               //var serie = 'The Walking Dead'
+               let serie = 'The Walking Dead'
+               console.log('dentro do bloco:' + serie);
+               
+           }
+
+           console.log('fora do bloco: ' + serie);
+           
+            
+
+        </script>
+        
+    </head>
+    <body>
+        
+        <div id="output"></div>
+
+    </body>
+</html>

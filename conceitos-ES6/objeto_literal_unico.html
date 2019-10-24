@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+        <script type="text/babel">
+            
+        let assinatura = {
+            idCliente: 1000,
+            descricao: 'Acesso a internet',
+            status() {
+                console.log('Ativo');
+                
+            }
+        }
+
+        console.log(assinatura.descricao);
+
+        // y nao recebe o objeto, mas sim uma referencia para o mesmo
+        let y = assinatura
+
+        console.log(y.descricao);
+
+        // é possivel alterar valores pela referencia de y
+
+        y.descricao = 'Internet, tv, telefone'
+
+        console.log(assinatura.descricao);
+        console.log(y.descricao);
+        
+        
+        
+        
+
+
+        </script>
+        
+    </head>
+    <body>
+        
+        <div id="output"></div>
+
+    </body>
+</html>
